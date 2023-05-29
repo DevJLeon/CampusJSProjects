@@ -13,3 +13,11 @@ const productos = {
     kipitos:1500
 };
 
+let product;
+console.log(productos.arroz)
+console.log(Object.keys(productos));
+
+/*while (product != 0){
+    
+};
+*/
