@@ -1,3 +1,28 @@
 .hidden {
-    display: none;
-  }
+  display: none;
+}
+
+body{
+    background: #bba694;
+}
+
+#result{
+  margin: 10px;
+  padding: 10px;
+  background: #9b7239;
+  display: inline-block;
+}
+
+.subtitle{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.subtitle span{
+  font-weight: normal;
+  font-style: normal;
+  color: #2a2b03;
+  margin: 0px 10px 0px 70px;
+  position: relative;
+  float: right;
+}
