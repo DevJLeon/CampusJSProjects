@@ -33,9 +33,9 @@ for (let i = 0; i<m;i++){ // sorting the snake matrix
     }; //add all the items sorted (not snake) to the last matrix 
     if(i %2 != 0){
       position.sort((a, b) => -a + b)
-    }; // reversing the 
+    }; // reversing odd rows
 };
 //BODY 
 console.log(matrix);
 console.log(superMat);
-console.log(sortedMatrix)
+console.log(sortedMatrix);
