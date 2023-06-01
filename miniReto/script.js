@@ -26,10 +26,10 @@ form.addEventListener('submit', function(event) {
   const totalAmount = bill + tipAmount;
   
   // Mostrar los resultados
-  billAmountSpan.textContent = bill.toFixed(2);
+  billAmountSpan.textContent = bill.toFixed(2) +" $";
   tipPercentageSpan.textContent = (tipPercentage * 100).toFixed(0) + '%';
-  tipAmountSpan.textContent = tipAmount.toFixed(2);
-  totalAmountSpan.textContent = totalAmount.toFixed(2);
+  tipAmountSpan.textContent = tipAmount.toFixed(2)+" $";
+  totalAmountSpan.textContent = parseInt(totalAmount.toFixed(2))+" $";
   
   resultDiv.classList.remove('hidden');
 });

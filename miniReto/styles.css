@@ -1,5 +1,6 @@
 .hidden {
   display: none;
+  
 }
 
 body{
@@ -10,7 +11,12 @@ body{
   margin: 10px;
   padding: 10px;
   background: #9b7239;
-  display: inline-block;
+  display:flexbox;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid black 1px;
 }
 
 .subtitle{
@@ -21,8 +27,14 @@ body{
 .subtitle span{
   font-weight: normal;
   font-style: normal;
-  color: #2a2b03;
+  color: #e2e2d6;
   margin: 0px 10px 0px 70px;
   position: relative;
   float: right;
+}
+
+#total-amount{
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
 }
