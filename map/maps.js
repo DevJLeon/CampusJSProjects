@@ -26,15 +26,35 @@ for (const entry of mapaSaur) {
 */
 
 // *****************************************************
-const map = new Map;
-const $cards = [];
 
-console.log($cards)
+const cards = [];
 
-$cards.appendChild
+// form elements
 
-$cards.push(map);
+const $form = document.getElementById("movieForm")
+const $createButton = document.getElementById("create");
+console.log($createButton)
 
-$cards[0].set(["titulo","Mondongo"])
 
-console.log($cards)
+$createButton.addEventListener("click", function (){
+  const $title = $form.title.value;
+  const $genre = $form.genre.value;
+  const $duration = $form.duration.value;
+  const $director = $form.director.value;
+  const $moviePic = $form.moviePic.value;
+
+  const pelicula = new Map;
+  pelicula.set("title",$title);
+  pelicula.set("genre",$genre);
+  pelicula.set("duration",$duration);
+  pelicula.set("director",$director);
+  pelicula.set("moviePic",$moviePic);
+
+  console.log(pelicula);
+  cards.push(pelicula)
+
+  const id = (cards.length)-1
+  console.log(id);
+  cards[id].set("id",id)
+  console.log(cards)
+});
